@@ -194,6 +194,12 @@ __MACOSX/
 !docs/
 !logo.png
 
+# Ignore large generated files
+faiss_index.bin
+metadata.pkl
+*.pkl
+*.bin
+
 # -------------------------------------------------------------------
 # End of .gitignore
 # -------------------------------------------------------------------
