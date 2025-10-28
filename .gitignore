@@ -1,0 +1,199 @@
+# -------------------------------------------------------------------
+# HomeHive - RAG Text-to-Query AI Application
+# Comprehensive .gitignore for clean and professional repository
+# -------------------------------------------------------------------
+
+# ------------------------------
+# 1. Python cache & temp files
+# ------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+.eggs/
+*.log
+*.tmp
+*.temp
+
+# ------------------------------
+# 2. Virtual environment folders
+# ------------------------------
+venv/
+env/
+ENV/
+.venv/
+.conda/
+.Python
+
+# ------------------------------
+# 3. Build / distribution folders
+# ------------------------------
+build/
+dist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+parts/
+sdist/
+wheels/
+share/python-wheels/
+*.manifest
+*.spec
+
+# ------------------------------
+# 4. Jupyter / notebooks
+# ------------------------------
+.ipynb_checkpoints/
+jupyter_notebook_config.py
+notebook.log
+
+# ------------------------------
+# 5. Streamlit / FastAPI / Logs
+# ------------------------------
+.streamlit/
+logs/
+*.db-journal
+*.pid
+*.sqlite3
+*.db
+
+# ------------------------------
+# 6. Data handling
+# ------------------------------
+# Ignore all data by default
+data/*
+# But keep raw data (so it gets uploaded)
+!data/raw/
+# Still ignore processed outputs
+data/processed/
+data/temp/
+data/cache/
+data/interim/
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.json
+*.parquet
+
+# ------------------------------
+# 7. Large binaries (AI, embeddings, FAISS)
+# ------------------------------
+faiss_index.bin
+metadata.pkl
+*.pkl
+*.h5
+*.pt
+*.bin
+*.model
+*.ckpt
+*.npy
+*.npz
+
+# ------------------------------
+# 8. Credentials / Environment
+# ------------------------------
+.env
+*.env
+credentials.json
+apikey.txt
+token.json
+secrets.json
+*.pem
+
+# ------------------------------
+# 9. IDE / Editor settings
+# ------------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# ------------------------------
+# 10. OS-specific clutter
+# ------------------------------
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.bak
+*.orig
+*.tmp
+
+# ------------------------------
+# 11. Testing / coverage
+# ------------------------------
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+.pytest_cache/
+.mypy_cache/
+.pyre/
+typecheck/
+.cache/
+nosetests.xml
+test-results/
+tests/__pycache__/
+
+# ------------------------------
+# 12. Documentation builds
+# ------------------------------
+docs/_build/
+docs/build/
+site/
+*.docx
+
+# ------------------------------
+# 13. Temporary or demo files
+# ------------------------------
+uploads/
+tmp/
+temp/
+*.old
+*.backup
+
+# ------------------------------
+# 14. External tools / API artifacts
+# ------------------------------
+google_credentials.json
+openai_api_key.txt
+__MACOSX/
+
+# ------------------------------
+# 15. Miscellaneous project files
+# ------------------------------
+*.sqlite
+*.sql
+*.tar
+*.zip
+*.gz
+*.rar
+*.7z
+*.bak
+*.out
+*.log
+
+# ------------------------------
+# ✅ Keep these essential files
+# ------------------------------
+!requirements.txt
+!README.md
+!Technical Report.pdf
+!app.py
+!indexing.py
+!rag_pipeline.py
+!src/
+!data/raw/
+!docs/
+!logo.png
+
+# -------------------------------------------------------------------
+# End of .gitignore
+# -------------------------------------------------------------------
